@@ -21,7 +21,7 @@ function startVideo() {
     )
 }
 
-const MODELS_URL = 'tryit/models';
+const MODELS_URL = '/tryit/models';
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri(MODELS_URL),
     faceapi.nets.faceLandmark68Net.loadFromUri(MODELS_URL)
